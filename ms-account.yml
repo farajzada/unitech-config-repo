@@ -3,7 +3,7 @@ server:
 
 spring:
   datasource:
-    url: jdbc:postgresql://postgres:5432/account_db
+    url: jdbc:postgresql://localhost:5432/account_db
     username: ${DB_USER:unitech}
     password: ${DB_PASS:password}
   jpa:
