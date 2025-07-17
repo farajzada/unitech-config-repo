@@ -14,10 +14,11 @@ spring:
     redis:
       host: localhost
       port: 6379
+  rabbitmq:
+    host: localhost
+    port: 5672
 
-rabbitmq:
-  host: localhost
-  port: 5672
+
 
 jwt:
   secret: localhost8080JWTSecret
