@@ -21,7 +21,7 @@ spring:
 
 
 jwt:
-  secret: localhost8080JWTSecret
+  secret: 9a995e2cbc1982886f08f8a933de90bceb080acbf0a7b434aca758d89aa7aa549d14336a422e659a81d4144d7c73bafacc75b8003ed38953919320a1df8d4296
   expiration: 3600
 
 eureka:
