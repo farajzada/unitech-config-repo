@@ -21,10 +21,11 @@ spring:
     password: guest
 
 app:
-  rabbitmq:
-    exchange: user.exchange
-    routing-key:
-      registered: user.registered
+  auth:
+    rabbitmq:
+      exchange: user.exchange
+      routing-key:
+        registered: user.registered
 
 springdoc:
   api-docs:
