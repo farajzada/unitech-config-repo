@@ -42,3 +42,4 @@ app:
       exchange: account.exchange
       routing-key:
         created: account.created
+        status-changed: account.status.changed
