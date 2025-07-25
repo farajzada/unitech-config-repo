@@ -4,8 +4,8 @@ server:
 spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/transfer_db
-    username: ${DB_USER:-unitech}
-    password: ${DB_PASS:-password}
+    username: postgres
+    password: postgres
   jpa:
     hibernate:
       ddl-auto: update
