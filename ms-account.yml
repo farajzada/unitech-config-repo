@@ -43,3 +43,9 @@ app:
       routing-key:
         created: account.created
         status-changed: account.status.changed
+
+logging:
+  level:
+    org.springframework.web.servlet.DispatcherServlet: DEBUG
+    com.unitech.account.controller: DEBUG
+
