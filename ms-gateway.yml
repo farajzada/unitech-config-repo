@@ -20,6 +20,10 @@ spring:
           uri: lb://ms-currency
           predicates:
             - Path=/api/currency/**
+        - id: ms-transfer
+          uri: lb://ms-transfer
+          predicates:
+            - Path=/api/transfers/**
 
 redis:
   host: localhost
