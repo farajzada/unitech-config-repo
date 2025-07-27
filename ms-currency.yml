@@ -2,10 +2,26 @@ server:
   port: 8084
 
 spring:
+  application:
+    name: ms-currency
+
+  # ← DATASOURCE FOR JPA
+  datasource:
+    url: jdbc:postgresql://localhost:5432/currency_db
+    username: unitech
+    password: password 
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update    # or "create" if you want a fresh schema each run
+    show-sql: true
+
   data:
     redis:
       host: localhost
       port: 6379
+
   main:
     allow-bean-definition-overriding: true
 
@@ -30,4 +46,4 @@ currency:
   api:
     url: https://api.exchangeratesapi.io/v1
     access-key: 2fa78b9520eeb3e802b5fb420a45dff3
-    cache-ttl-seconds: 3600   
+    cache-ttl-seconds: 3600
