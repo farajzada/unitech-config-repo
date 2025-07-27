@@ -8,18 +8,18 @@ spring:
         locator:
           enabled: false
       routes:
-        - id: auth-service
+        - id: auth-service            # ← bu düzgündür, ASCII hyphen
           uri: lb://ms-auth
           predicates:
             - Path=/api/auth/**
-        - id: ms-account
+        - id: ms-account             
           uri: lb://ms-account    
           predicates:
             - Path=/api/account/**
-        – id: ms-currency
+        – id: ms-currency            # ← buradakı en-dashdır, yanlış!
           uri: lb://ms-currency
           predicates:
-            – Path=/api/currency/**
+            – Path=/api/currency/** 
   redis:
     host: localhost
     port: 6379
