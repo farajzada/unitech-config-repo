@@ -16,7 +16,11 @@ spring:
     username: guest
     password: guest
 
-
+feign:
+  client:
+    config:
+      default:
+        loggerLevel: full
 
 eureka:
   client:
