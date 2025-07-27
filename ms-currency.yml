@@ -4,8 +4,13 @@ server:
 spring:
   application:
     name: ms-currency
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
 
-  # ← DATASOURCE FOR JPA
+
   datasource:
     url: jdbc:postgresql://localhost:5432/currency_db
     username: unitech
@@ -14,7 +19,7 @@ spring:
 
   jpa:
     hibernate:
-      ddl-auto: update    # or "create" if you want a fresh schema each run
+      ddl-auto: update    
     show-sql: true
 
   data:
