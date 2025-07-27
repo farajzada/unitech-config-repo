@@ -23,3 +23,7 @@ springdoc:
     path: /v3/api-docs
   swagger-ui:
     path: /swagger-ui.html
+
+currency:
+  api:
+    access-key: 2fa78b9520eeb3e802b5fb420a45dff3  
