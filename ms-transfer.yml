@@ -2,6 +2,18 @@ server:
   port: 8083
 
 spring:
+  application:
+    name: ms-transfer
+  cloud:
+    discovery:
+      enabled: true
+    openfeign:
+      client:
+        config:
+          default:
+            connectTimeout: 5000
+            readTimeout: 5000
+          
   datasource:
     url: jdbc:postgresql://localhost:5432/transfer_db
     username: postgres
